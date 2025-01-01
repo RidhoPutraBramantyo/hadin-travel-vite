@@ -239,3 +239,31 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Scrollbar global dengan auto-hide */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+/* Auto-hide scrollbar */
+html {
+  scrollbar-gutter: stable both-edges; /* Untuk menghindari pergeseran layout */
+}
+
+::-webkit-scrollbar {
+  display: none; /* Sembunyikan scrollbar */
+}
+
+.scrollbar-auto:hover::-webkit-scrollbar {
+  display: block; /* Tampilkan saat di-hover */
+}

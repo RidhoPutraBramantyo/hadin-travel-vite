@@ -2,7 +2,7 @@ const Section1 = () => {
   return (
     <section className="relative w-full h-screen">
       {/* Slider Background with Gradient */}
-      <div className="absolute inset-0 bg-cover bg-center bg-[url('src/assets/landscape-mountain.png')] "></div>
+      <div className="absolute inset-0 bg-cover bg-center bg-[url('/landscape-mountain.png')] "></div>
 
       {/* Dot Indicator */}
       <div className="absolute flex gap-2 left-1/2 transform -translate-x-1/2 bottom-6">

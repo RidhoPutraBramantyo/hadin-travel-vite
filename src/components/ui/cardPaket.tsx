@@ -9,7 +9,6 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import TourPackageHeader from "../layout/TourPackageHeader";
 
 const notifications = [
   {
@@ -34,56 +33,43 @@ const notifications = [
   },
 ];
 
-{
-  /*
-  Rafting Goa Pindul, susur sungai dalam goa, Rafting Sungai Oyo, Air Terjun Sri Gethuk, Sky View Heha.
-  */
-}
-
 type CardProps = React.ComponentProps<typeof Card>;
 
 export function CardDemo({}: CardProps) {
   return (
-    <Card className={`"w-[380px]"`}>
-      <CardContent className="grid gap-4">
-        {/* <BellRing /> */}
-        <div
-          className="w-full h-[210px] bg-cover bg-center rounded-lg"
-          style={{
-            backgroundImage:
-              "url('src/assets/BorobudurSunrisePrambananTempleTrip-1.png')",
-          }}
-        ></div>
-        {/* <Switch /> */}
+    <Card className="w-[270px] xl:w-full">
+      <CardContent>
+        <div className="w-full h-[210px] rounded-lg overflow-hidden">
+          <img
+            className="w-full h-full object-center object-cover"
+            src="/BorobudurSunrisePrambananTempleTrip-1.png"
+            alt=""
+          />
+        </div>
       </CardContent>
-      <div className="flex justify-between items-center w-full h-[30px] space-y-1.5 p-4">
+      <div className="flex justify-between items-center w-full h-[30px] space-y-1.5 p-4 gap-10">
         <div className="flex text-[#707070] items-center gap-1">
-          <div className="w-[15px] h-[15px] ">
-            <FaMapMarkerAlt
-              className="w-full h-full"
-              // src="src/assets/icon-mdi_map-marker.png"
-              // alt=""
-            />
+          <div className="w-[15px] h-[17px] ">
+            <FaMapMarkerAlt className="w-full h-full" />
           </div>
           <span className=" text-xs">Yogyakarta</span>
         </div>
 
-        <div className="flex gap-2 text-[#707070]">
+        <div className="flex text-[#707070] items-center gap-1">
           <div className="w-[21px] h-[17px] ">
             <TbSunset2
               className="w-full h-full"
-              // src="src/assets/sunset-vector.svg"
+              // src="/sunset-vector.svg"
               // alt=""
             />
           </div>
-          <span className="text-xs">1 Hari</span>
+          <span className="text-xs whitespace-nowrap">1 Hari</span>
         </div>
       </div>
       <CardHeader>
         <CardTitle>Paket Wisata Jogja 1 Hari Paket 6</CardTitle>
-        <CardDescription>
-          {" "}
-          <div className="text-sm text-black my-2">
+        <CardDescription className="text-left">
+          <div className="text-sm font-extrabold text-black my-2">
             Destinasi yang akan dikunjungi yaitu:
           </div>
           <div>
@@ -115,7 +101,7 @@ export function CardDemo({}: CardProps) {
 
 const CardPaket = () => {
   return (
-    <div className="grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8 mx-auto w-full max-w-screen-xl py-8">
+    <div className=" flex xl:grid xl:grid-cols-4 gap-8 w-80 sm:w-[620px] md:w-[740px] lg:w-[1010px] xl:w-full overflow-x-auto lg:overflow-visible py-8 px-4">
       <CardDemo />
       <CardDemo />
       <CardDemo />

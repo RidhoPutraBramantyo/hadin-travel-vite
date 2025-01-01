@@ -17,7 +17,7 @@ const Navbar = () => {
           <div className="flex items-center justify-center py-2 px-4 gap-2.5 w-auto h-auto">
             <a
               href="/wisata"
-              className="font-poppins font-medium text-[#121212] text-[16px] leading-[24px]"
+              className="font-poppins font-medium text-[#121212] hover:text-white text-[16px] leading-[24px]"
             >
               Wisata
             </a>
@@ -26,7 +26,7 @@ const Navbar = () => {
           <div className="flex items-center justify-center py-2 px-4 gap-2.5 w-auto h-auto">
             <a
               href="/umroh"
-              className="font-poppins font-medium text-[#121212] text-[16px] leading-[24px]"
+              className="font-poppins font-medium text-[#121212] hover:text-white text-[16px] leading-[24px]"
             >
               Umroh
             </a>
@@ -38,10 +38,10 @@ const Navbar = () => {
               (window.location.href = "https://wa.me/082122334455")
             }
           >
-            <div className="hidden md:block w-full h-full">
+            <div className="hidden md:block w-6 h-6">
               <img
                 className="w-full h-full object-cover"
-                src="src/assets/icon-whatsapp.png"
+                src="/icon-whatsapp.png"
                 alt=""
               />
             </div>
@@ -53,7 +53,7 @@ const Navbar = () => {
       </div>
 
       <div className="absolute hidden md:flex items-start justify-center w-full md:w-[243.5px] h-[87.21px] left-0 ml-10 top-2.5 z-10">
-        <div className="w-[223.5px] h-[67.21px] bg-[url('src/assets/logo-hadin-tour-n-travel.png')] bg-cover bg-no-repeat bg-center"></div>
+        <div className="w-[223.5px] h-[67.21px] bg-[url('/logo-hadin-tour-n-travel.png')] bg-cover bg-no-repeat bg-center"></div>
       </div>
     </div>
   );

@@ -29,7 +29,7 @@ const BannerWithButton: React.FC<BannerWithButtonProps> = ({
       >
         <IoIosArrowBack className="w-full h-full object-cover" size={30} />
       </Button>
-      <div className=" sm:w-[240px] h-[54px] flex items-center order-1">
+      <div className=" sm:w-[240px] h-[54px] flex items-center order-1 flex-grow-0">
         <p className="font-poppins font-bold text-xl sm:text-3xl text-white">
           {title}
         </p>
