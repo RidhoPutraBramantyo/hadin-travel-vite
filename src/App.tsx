@@ -7,6 +7,7 @@ import Section1 from "./components/ui/section-1";
 import FeatureSection from "./components/ui/featureCardProps";
 import CardPaket from "./components/ui/cardPaket";
 import Navbar from "./components/layout/navbar";
+import TourNavlink from "./components/layout/TourPackageHeader";
 
 function App() {
   // const wisataData = [
@@ -109,13 +110,19 @@ function App() {
   }, []);
 
   return (
-    <div className="relative flex flex-col items-center w-full max-w-screen-2xl bg-white overflow-hidden">
+    <div className="relative flex flex-col items-center w-full max-w-screen-2xl bg-white ">
       <Navbar />
       <Section1 />
 
       <FeatureSection />
-      <CardPaket />
-
+      <div className="flex flex-col gap-10">
+        <TourNavlink title="Paket Wisata" link="/wisata" />
+        <CardPaket />
+      </div>
+      <div className="flex flex-col gap-10">
+        <TourNavlink title="Paket Umroh" link="/umroh" />
+        <CardPaket />
+      </div>
       {/* <section className="bg-[url('https://hotelunhas.id/wp-content/uploads/2024/10/Taman-Leang-Leang-Main.png')] bg-cover bg-center w-full flex flex-col items-center py-8">
         <div className="bg-[url('https://hotelunhas.id/wp-content/uploads/2024/10/Taman-Leang-Leang-Main.png')] bg-cover bg-center w-full flex flex-col items-center gap-4 pt-8 pb-4 px-8">
           <div className="max-w-[1366px] w-full">

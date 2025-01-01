@@ -4,6 +4,8 @@ import App from "./App.tsx";
 import "./index.css";
 import Footer from "./components/layout/footer.tsx";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Wisata from "./pages/wisata.tsx";
+import Umroh from "./pages/umroh.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
@@ -11,7 +13,8 @@ createRoot(document.getElementById("root")!).render(
       <Router>
         <Routes>
           <Route path="/" element={<App />} />
-          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/wisata" element={<Wisata />} />
+          <Route path="/umroh" element={<Umroh />} />
         </Routes>
       </Router>
       <Footer />
