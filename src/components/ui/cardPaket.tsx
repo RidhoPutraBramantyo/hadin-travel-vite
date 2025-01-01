@@ -37,7 +37,7 @@ type CardProps = React.ComponentProps<typeof Card>;
 
 export function CardDemo({}: CardProps) {
   return (
-    <Card className="w-[270px] xl:w-full">
+    <Card className="w-full xl:w-full min-w-72">
       <CardContent>
         <div className="w-full h-[210px] rounded-lg overflow-hidden">
           <img

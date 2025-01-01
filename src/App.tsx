@@ -116,15 +116,15 @@ function App() {
   ];
 
   return (
-    <main className="relative flex flex-col items-center w-full max-w-screen-2xl bg-white ">
+    <main className="relative flex flex-col items-center w-full max-w-screen-2xl bg-white gap-10">
       <Navbar />
       <Carousel slides={images}></Carousel>
       <FeatureSection />
-      <section className="flex flex-col gap-10">
+      <section className="flex flex-col gap-2">
         <TourNavlink title="Paket Wisata" link="/wisata" />
         <CardPaket />
       </section>
-      <section className="flex flex-col gap-10">
+      <section className="flex flex-col gap-2">
         <TourNavlink title="Paket Umroh" link="/umroh" />
         <CardPaket />
       </section>
