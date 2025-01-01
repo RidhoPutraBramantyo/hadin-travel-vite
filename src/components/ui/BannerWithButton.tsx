@@ -4,9 +4,9 @@ import { IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 
 interface BannerWithButtonProps {
-  backgroundImage: string; // URL untuk gambar latar belakang
-  buttonLink: string; // Rute tujuan ketika tombol diklik
-  title: string; // Judul teks yang ditampilkan
+  backgroundImage: string; 
+  buttonLink: string;
+  title: string;
 }
 
 const BannerWithButton: React.FC<BannerWithButtonProps> = ({
@@ -14,7 +14,7 @@ const BannerWithButton: React.FC<BannerWithButtonProps> = ({
   buttonLink,
   title,
 }) => {
-  const navigate = useNavigate(); // Hook untuk navigasi
+  const navigate = useNavigate(); 
 
   return (
     <div
@@ -24,7 +24,7 @@ const BannerWithButton: React.FC<BannerWithButtonProps> = ({
       }}
     >
       <Button
-        onClick={() => navigate(buttonLink)} // Navigasi ketika tombol diklik
+        onClick={() => navigate(buttonLink)}
         className="h-10 w-10 flex items-center justify-center bg-[#e3e3e380] rounded-[52px] p-0"
       >
         <IoIosArrowBack className="w-full h-full object-cover" size={30} />

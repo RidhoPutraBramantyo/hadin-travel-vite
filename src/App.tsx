@@ -104,8 +104,8 @@ function App() {
 
   useEffect(() => {
     Aos.init({
-      duration: 1200, // Durasi animasi
-      once: true, // Animation will happen only once when scrolling down
+      duration: 1200,
+      once: true,
     });
   }, []);
 

@@ -1,15 +1,15 @@
-import { useEffect } from "react";
-import Aos from "aos";
+// import { useEffect } from "react";
+// import Aos from "aos";
 import "aos/dist/aos.css";
 import { Button } from "../ui/button";
 
 const Navbar = () => {
-  useEffect(() => {
-    Aos.init({
-      duration: 1200, // Durasi animasi
-      once: true, // Animation will happen only once when scrolling down
-    });
-  }, []);
+  // useEffect(() => {
+  //   Aos.init({
+  //     duration: 1200, // Durasi animasi
+  //     once: true, // Animation will happen only once when scrolling down
+  //   });
+  // }, []);
   return (
     <div className=" fixed hidden sm:flex sm:flex-row justify-center items-center max-w-screen-2xl w-fit sm:w-screen xl:w-[90%] top-0  px-4 py-2.5  gap-2.5  h-auto bg-transparent z-10 isolation-isolate">
       <div className="flex flex-row justify-between items-center px-0 sm:px-5 md:px-10 py-2 md:pl-48 mx-auto md:ml-24 gap-4 w-full max-w-[1620px] h-[50px] bg-white bg-opacity-50 border border-white backdrop-blur-lg rounded-lg z-0">

@@ -15,7 +15,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Optional: Apply default font globally */
 body {
   @apply font-poppins;
 }
@@ -166,13 +165,14 @@ body {
 /*  */
 
 [data-aos] {
-  opacity: 0; /* Default state is hidden */
+  opacity: 0;
+
   transition-property: opacity, transform;
-  transition-duration: 0.5s; /* Transition duration */
+  transition-duration: 0.5s;
 }
 
 [data-aos].aos-animate {
-  opacity: 1; /* Element is visible when animated */
+  opacity: 1;
 }
 
 @layer base {
@@ -240,7 +240,6 @@ body {
   }
 }
 
-/* Scrollbar global dengan auto-hide */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -255,15 +254,14 @@ body {
   background: #f3f4f6;
 }
 
-/* Auto-hide scrollbar */
 html {
-  scrollbar-gutter: stable both-edges; /* Untuk menghindari pergeseran layout */
+  scrollbar-gutter: stable both-edges;
 }
 
 ::-webkit-scrollbar {
-  display: none; /* Sembunyikan scrollbar */
+  display: none;
 }
 
 .scrollbar-auto:hover::-webkit-scrollbar {
-  display: block; /* Tampilkan saat di-hover */
+  display: block;
 }
