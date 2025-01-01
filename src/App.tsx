@@ -3,11 +3,11 @@ import "./App.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 // import LocationInfo from "./components/ui/LocationInfo";
-import Section1 from "./components/ui/section-1";
 import FeatureSection from "./components/ui/featureCardProps";
 import CardPaket from "./components/ui/cardPaket";
 import Navbar from "./components/layout/navbar";
 import TourNavlink from "./components/layout/TourPackageHeader";
+import Carousel from "./pages/slider";
 
 function App() {
   // const wisataData = [
@@ -109,11 +109,16 @@ function App() {
     });
   }, []);
 
+  const images = [
+    "/landscape-mountain.png",
+    "/umroh-bg-omer-f-arslan-W0FhhtnMd8k-unsplash.png",
+    "/tour-bg-igor-sporynin-SWbERrVDFkg-unsplash.png",
+  ];
+
   return (
     <main className="relative flex flex-col items-center w-full max-w-screen-2xl bg-white ">
       <Navbar />
-      <Section1 />
-
+      <Carousel slides={images}></Carousel>
       <FeatureSection />
       <section className="flex flex-col gap-10">
         <TourNavlink title="Paket Wisata" link="/wisata" />
