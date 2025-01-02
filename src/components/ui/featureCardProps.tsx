@@ -1,5 +1,3 @@
-// components/FeatureSection.tsx
-
 import { Button } from "./button";
 
 type FeatureCardProps = {
@@ -71,8 +69,8 @@ const FeatureSection = () => {
           <div className="w-full h-full  rounded-[16px] overflow-hidden ">
             <img
               className="w-full h-full object-cover"
-              src="/about-us-sideleft-image.png"
-              alt="about-us-sideleft-image.png"
+              src="/about-us-sideleft-image.webp"
+              alt="about-us-sideleft-image.webp"
             />
           </div>
         </div>

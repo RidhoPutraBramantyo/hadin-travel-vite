@@ -1,7 +1,7 @@
 const Section1 = () => {
   return (
     <section className="relative w-full h-screen">
-      <div className="absolute inset-0 bg-cover bg-center bg-[url('/landscape-mountain.png')] "></div>
+      <div className="absolute inset-0 bg-cover bg-center bg-[url('/landscape-mountain.webp')] "></div>
 
       <div className="absolute flex gap-2 left-1/2 transform -translate-x-1/2 bottom-6">
         <div className="w-6 h-2 bg-red-600 rounded-full"></div>

@@ -1,15 +1,31 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-// import LocationInfo from "./components/ui/LocationInfo";
 import FeatureSection from "./components/ui/featureCardProps";
 import CardPaket from "./components/ui/cardPaket";
 import Navbar from "./components/layout/navbar";
 import TourNavlink from "./components/layout/TourPackageHeader";
-import Carousel from "./pages/slider";
+import Carousel from "./components/slider";
+
+interface Destination {
+  title: string;
+  description: string;
+}
+
+interface TravelCard {
+  imageSrc: string;
+  location: string;
+  duration: string;
+  title: string;
+  price: string;
+  destinations: Destination[];
+}
 
 function App() {
+  const [paketTravel, setPaketTravel] = useState<TravelCard[]>([]);
+  const limitedData = paketTravel.slice(0, 4);
+
   // const wisataData = [
   //   {
   //     title: "Wisata Situs Prasejarah",
@@ -103,6 +119,21 @@ function App() {
   // ];
 
   useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await fetch("/data.json");
+        if (!res.ok) throw new Error("Failed to fetch data");
+        const data = await res.json();
+        setPaketTravel(data);
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  useEffect(() => {
     Aos.init({
       duration: 1200,
       once: true,
@@ -110,9 +141,9 @@ function App() {
   }, []);
 
   const images = [
-    "/landscape-mountain.png",
-    "/umroh-bg-omer-f-arslan-W0FhhtnMd8k-unsplash.png",
-    "/tour-bg-igor-sporynin-SWbERrVDFkg-unsplash.png",
+    "/landscape-mountain.webp",
+    "/umroh-bg-omer-f-arslan-W0FhhtnMd8k-unsplash.webp",
+    "/tour-bg-igor-sporynin-SWbERrVDFkg-unsplash.webp",
   ];
 
   return (
@@ -122,11 +153,11 @@ function App() {
       <FeatureSection />
       <section className="flex flex-col gap-2">
         <TourNavlink title="Paket Wisata" link="/wisata" />
-        <CardPaket />
+        <CardPaket kumpulanPaketTravel={limitedData} />
       </section>
       <section className="flex flex-col gap-2">
         <TourNavlink title="Paket Umroh" link="/umroh" />
-        <CardPaket />
+        <CardPaket kumpulanPaketTravel={limitedData} />
       </section>
     </main>
   );

@@ -1,0 +1,98 @@
+[
+  {
+    "imageSrc": "/BorobudurSunrisePrambananTempleTrip-1.png",
+    "location": "Yogyakarta",
+    "duration": "2 Hari",
+    "title": "Paket Wisata Jogja 2 Hari Paket 1",
+    "price": "RP720.000 / PAX",
+    "destinations": [
+      { "title": "Candi Borobudur", "description": "2 hours ago" },
+      { "title": "Candi Prambanan", "description": "3 hours ago" },
+      { "title": "Pantai Parangtritis", "description": "4 hours ago" }
+    ]
+  },
+  {
+    "imageSrc": "/BorobudurSunrisePrambananTempleTrip-1.png",
+    "location": "Bali",
+    "duration": "3 Hari",
+    "title": "Paket Wisata Bali 3 Hari Paket 4",
+    "price": "RP1.200.000 / PAX",
+    "destinations": [
+      { "title": "Pantai Kuta", "description": "1 day ago" },
+      { "title": "Gunung Agung", "description": "2 days ago" },
+      { "title": "Uluwatu Temple", "description": "3 days ago" }
+    ]
+  },
+  {
+    "imageSrc": "/BorobudurSunrisePrambananTempleTrip-1.png",
+    "location": "Jakarta",
+    "duration": "1 Hari",
+    "title": "Paket Wisata Jakarta 1 Hari Paket 2",
+    "price": "RP500.000 / PAX",
+    "destinations": [
+      { "title": "Monas", "description": "3 hours ago" },
+      { "title": "Kota Tua", "description": "1 hour ago" },
+      { "title": "Taman Mini Indonesia Indah", "description": "2 hours ago" }
+    ]
+  },
+  {
+    "imageSrc": "/BorobudurSunrisePrambananTempleTrip-1.png",
+    "location": "Bandung",
+    "duration": "2 Hari",
+    "title": "Paket Wisata Bandung 2 Hari Paket 3",
+    "price": "RP650.000 / PAX",
+    "destinations": [
+      { "title": "Kawah Putih", "description": "2 hours ago" },
+      { "title": "Trans Studio Bandung", "description": "3 hours ago" },
+      { "title": "Tangkuban Perahu", "description": "1 day ago" }
+    ]
+  },
+  {
+    "imageSrc": "/BorobudurSunrisePrambananTempleTrip-1.png",
+    "location": "Lombok",
+    "duration": "4 Hari",
+    "title": "Paket Wisata Lombok 4 Hari Paket 5",
+    "price": "RP1.000.000 / PAX",
+    "destinations": [
+      { "title": "Gili Trawangan", "description": "1 day ago" },
+      { "title": "Gunung Rinjani", "description": "2 days ago" },
+      { "title": "Pantai Senggigi", "description": "3 hours ago" }
+    ]
+  },
+  {
+    "imageSrc": "/BorobudurSunrisePrambananTempleTrip-1.png",
+    "location": "Surabaya",
+    "duration": "2 Hari",
+    "title": "Paket Wisata Surabaya 2 Hari Paket 6",
+    "price": "RP550.000 / PAX",
+    "destinations": [
+      { "title": "Monumen Kapal Selam", "description": "3 hours ago" },
+      { "title": "Taman Bungkul", "description": "2 hours ago" },
+      { "title": "Jembatan Suramadu", "description": "1 day ago" }
+    ]
+  },
+  {
+    "imageSrc": "/BorobudurSunrisePrambananTempleTrip-1.png",
+    "location": "Malang",
+    "duration": "3 Hari",
+    "title": "Paket Wisata Malang 3 Hari Paket 7",
+    "price": "RP850.000 / PAX",
+    "destinations": [
+      { "title": "Jatim Park 2", "description": "1 day ago" },
+      { "title": "Batu Secret Zoo", "description": "2 days ago" },
+      { "title": "Coban Rondo Waterfall", "description": "3 hours ago" }
+    ]
+  },
+  {
+    "imageSrc": "/BorobudurSunrisePrambananTempleTrip-1.png",
+    "location": "Medan",
+    "duration": "2 Hari",
+    "title": "Paket Wisata Medan 2 Hari Paket 8",
+    "price": "RP800.000 / PAX",
+    "destinations": [
+      { "title": "Danau Toba", "description": "4 hours ago" },
+      { "title": "Istana Maimun", "description": "1 day ago" },
+      { "title": "Mesjid Raya", "description": "2 hours ago" }
+    ]
+  }
+]
