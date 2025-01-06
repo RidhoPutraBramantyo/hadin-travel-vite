@@ -56,10 +56,7 @@ const config: Config = {
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
-        lobster: ["Lobster", "cursive"],
-        andhyta: ["Andhyta", "sans-serif"],
         madi: ["Ms Madi", "cursive"],
-        orenainbaium: ["Orenainbaium", "serif"],
       },
       keyframes: {
         "accordion-down": {

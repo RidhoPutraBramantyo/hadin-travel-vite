@@ -94,7 +94,7 @@ type CardPaketProps = {
 
 export const CardCustom = ({ cards }: CardPaketProps) => {
   return (
-    <div className="flex xl:grid xl:grid-cols-4 gap-8 w-80 sm:w-[620px] md:w-[740px] lg:w-[1010px] xl:w-full overflow-x-auto lg:overflow-visible py-8 px-4">
+    <div className="flex xl:grid xl:grid-cols-4 gap-8 w-80 sm:w-[620px] md:w-[740px] lg:w-[1010px] xl:w-full overflow-x-auto lg:overflow-visible py-4 px-4">
       {cards.map((card, index) => (
         <TravelCard key={index} {...card} />
       ))}

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   BsFillArrowRightCircleFill,
   BsFillArrowLeftCircleFill,
@@ -19,6 +19,14 @@ export default function Carousel({ slides }: Any) {
     if (current === slides.length - 1) setCurrent(0);
     else setCurrent(current + 1);
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prevIndex) => (prevIndex + 1) % slides.length);
+    }, 3000); // Ganti slide setiap 3 detik
+
+    return () => clearInterval(interval); // Membersihkan interval saat komponen unmount
+  }, []);
 
   return (
     <div className="overflow-hidden h-screen relative">
@@ -52,10 +60,10 @@ export default function Carousel({ slides }: Any) {
         </button>
       </div>
       <div className="absolute inset-0 flex flex-col justify-center items-center">
-        <h1 className="text-white font-poppins font-bold text-8xl sm:text-6xl lg:text-[150px] opacity-50">
+        <h1 className="text-white font-poppins font-bold text-4xl sm:text-6xl lg:text-[150px] opacity-50">
           HADIN
         </h1>
-        <p className="absolute text-red-600 font-madi text-5xl sm:text-3xl lg:text-[72px] px-4 py-2 mt-16  capitalize">
+        <p className="absolute text-red-600 font-madi text-2xl sm:text-3xl lg:text-[72px] px-4 py-2 mt-16  capitalize">
           Tour & Travel
         </p>
       </div>

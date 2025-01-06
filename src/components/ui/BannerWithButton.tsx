@@ -4,7 +4,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 
 interface BannerWithButtonProps {
-  backgroundImage: string; 
+  backgroundImage: string;
   buttonLink: string;
   title: string;
 }
@@ -14,7 +14,7 @@ const BannerWithButton: React.FC<BannerWithButtonProps> = ({
   buttonLink,
   title,
 }) => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   return (
     <div
